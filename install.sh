@@ -4,7 +4,6 @@ while getopts t:a:s:g: flag
 do
     case "${flag}" in
         t) Token=${OPTARG};;
-        #a) Akkuname=${OPTARG};;
         s) Seriennummer=${OPTARG};;
         g) gitToken=${OPTARG};;
     esac
@@ -12,13 +11,15 @@ done
 
 echo "#####################################"
 
+Akkuname="$Seriennummer"
 echo "Token: $Token"
-$Akkuname=$Token
 echo "Akkuname: $Akkuname"
 echo "Seriennummer: $Seriennummer"
 echo "GitToken: $gitToken"
 
 echo "#####################################"
+
+
 
 
 
