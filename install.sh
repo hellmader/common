@@ -20,7 +20,4 @@ echo "GitToken: $gitToken"
 echo "#####################################"
 
 
-
-
-
 curl -s https://${gitToken}@raw.githubusercontent.com/hellmader/ProfiLink/master/install/install.sh | bash -s -- -t ${gitToken]  -s ${Seriennummer}  -g ${gitToken}
