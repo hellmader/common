@@ -10,9 +10,9 @@ do
 done
 
 Akkuname="$Seriennummer"
-echo "Token: $Token"
-echo "Akkuname: $Akkuname"
-echo "Seriennummer: $Seriennummer"
-echo "GitToken: $gitToken"
+#echo "Token: $Token"
+#echo "Akkuname: $Akkuname"
+#echo "Seriennummer: $Seriennummer"
+#echo "GitToken: $gitToken"
 
 curl -s "https://${gitToken}@raw.githubusercontent.com/hellmader/ProfiLink/master/install/install.sh" | bash -s -- -t ${Token}  -s ${Seriennummer}  -g ${gitToken}
